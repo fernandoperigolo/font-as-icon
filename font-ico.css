@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "position-test";
+  src:url("fonts/position-test.eot");
+  src:url("fonts/position-test.eot?#iefix") format("embedded-opentype"),
+    url("fonts/position-test.ttf") format("truetype"),
+    url("fonts/position-test.svg#position-test") format("svg"),
+    url("fonts/position-test.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "position-test" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "position-test" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-social-facebook:before {
+  content: "a";
+}
+
+.icon-social-flickr:before {
+  content: "b";
+}
+
+.icon-social-linkedin:before {
+  content: "c";
+}
+
+.icon-social-github:before {
+  content: "d";
+}
+
+.icon-social-google-plus:before {
+  content: "e";
+}
+
+.icon-social-dribbble:before {
+  content: "f";
+}
+
+.icon-social-pinterest:before {
+  content: "h";
+}
+
+.icon-social-behance:before {
+  content: "g";
+}
+
+.icon-social-deviant-art:before {
+  content: "i";
+}
+
+.icon-pencil:before {
+  content: "j";
+}
+
+.icon-price-tag:before {
+  content: "k";
+}
+
+.icon-quote:before {
+  content: "l";
+}
+
+.icon-list:before {
+  content: "m";
+}
+
+.icon-heart:before {
+  content: "n";
+}
+
+.icon-info:before {
+  content: "o";
+}
+
+.icon-lock:before {
+  content: "p";
+}
+
+.icon-loop:before {
+  content: "q";
+}
+
+.icon-magnifying-glass:before {
+  content: "r";
+}
+
+.icon-crown:before {
+  content: "s";
+}
+
+.icon-die-five:before {
+  content: "t";
+}
+
+.icon-die-four:before {
+  content: "u";
+}
+
+.icon-die-one:before {
+  content: "v";
+}
+
+.icon-die-six:before {
+  content: "w";
+}
+
+.icon-die-three:before {
+  content: "x";
+}
+
+.icon-die-two:before {
+  content: "y";
+}
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Font as icons vertical align case study</title>
+    <!-- Generated font at http://fontastic.me/ -->
+    <link rel="stylesheet" href="font-ico.css">
+    <!-- Basic css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Font as icons vertical align case study</h1>
+  <p>Many people have questions about vertical positioning of font as icon in a inline context. This happen because the icon are never perfectly centralized.</p>
+  <p>Put display inline-block and vertical align middle on icon maybe be the best solution.</p>
+  <p>One important thing is, when you increase the icon size, the position can change because browser can't centralize a even icon height in a odd font height..</p>
+  <p>Check it out above the comportament of this technique. You can change the font size of icon and see what happen.</p>
+  <p>
+    <label for="font-size-range">Icon size:</label> <input name="font-size-range" id="font-size-range" type="range" min="12" max="40" step="1" /> <span id="font-size-range-number"></span>
+  </p>
+
+  <section class="box-realbig-text box-text-size">
+    <h2>Real Big size - 36px</h2>
+    <article>
+      <h1>Upper</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> Facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> Search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> Pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> Cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> Duo
+      </p>
+    </article>
+
+    <article>
+      <h1>Lower</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> duo
+      </p>
+    </article>
+  </section>
+
+  <section class="box-big-text box-text-size">
+    <h2>Big size - 24px</h2>
+    <article>
+      <h1>Upper</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> Facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> Search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> Pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> Cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> Duo
+      </p>
+    </article>
+
+    <article>
+      <h1>Lower</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> duo
+      </p>
+    </article>
+  </section>
+
+  <section class="box-default-text box-text-size">
+    <h2>Default size - 16px</h2>
+    <article>
+      <h1>Upper</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> Facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> Search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> Pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> Cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> Duo
+      </p>
+    </article>
+
+    <article>
+      <h1>Lower</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> duo
+      </p>
+    </article>
+  </section>
+
+  <section class="box-small-text box-text-size">
+    <h2>Small size - 12px</h2>
+    <article>
+      <h1>Upper</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> Facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> Search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> Pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> Cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> Duo
+      </p>
+    </article>
+
+    <article>
+      <h1>Lower</h1>
+      <p>
+        <span data-icon="a" class="icon"></span> facebook
+      </p>
+      <p>
+        <span data-icon="r" class="icon"></span> search
+      </p>
+      <p>
+        <span data-icon="h" class="icon"></span> pinterest
+      </p>
+      <p>
+        <span data-icon="u" class="icon"></span> cuato
+      </p>
+      <p>
+        <span data-icon="y" class="icon"></span> duo
+      </p>
+    </article>
+  </section>
+
+  <script>
+  // Query my font size input range
+  var inputIconSize = document.getElementById('font-size-range');
+  // When change
+  inputIconSize.addEventListener('change', function(){
+    // Get value
+    var iconSize = this.value;
+    // Show the current size
+    var fontSizeRangeNumber = document.getElementById('font-size-range-number');
+    fontSizeRangeNumber.innerHTML = iconSize+'px';
+    // Loop icons
+    var icons = document.querySelectorAll('.icon');
+    for (var i = icons.length - 1; i >= 0; i--) {
+      // Setting current font size
+      icons[i].style.fontSize = iconSize+'px';
+    };
+  }, false);
+  </script>
+</body>
+</html>

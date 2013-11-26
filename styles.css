@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+  font-family: sans-serif;
+}
+
+/* Container for sizes */
+.box-text-size{
+  float: left;
+  margin: 0 40px 0 0;
+}
+.box-text-size:last-child{
+  margin: 0;
+}
+
+/* Different sizes */
+.box-small-text p{
+  font-size: 12px;
+}
+
+.box-default-text p{
+  font-size: 16px;
+}
+
+.box-big-text p{
+  font-size: 24px;
+}
+
+.box-realbig-text p{
+  font-size: 36px;
+}
+
+/* Icon centralized */
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+}
